@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 8000;
 const username = process.env.DB_USERNAME;
 const password = process.env.DB_PASSWORD;
 
-const URL = process.env.MONGODB_URI || `mongodb://${USERNAME}:${PASSWORD}@ac-dpm1db2-shard-00-00.jqk5in1.mongodb.net:27017,ac-dpm1db2-shard-00-01.jqk5in1.mongodb.net:27017,ac-dpm1db2-shard-00-02.jqk5in1.mongodb.net:27017/?ssl=true&replicaSet=atlas-uiv1ka-shard-0&authSource=admin&retryWrites=true&w=majority`
+const URI = process.env.MONGODB_URI || `mongodb://${USERNAME}:${PASSWORD}@ac-dpm1db2-shard-00-00.jqk5in1.mongodb.net:27017,ac-dpm1db2-shard-00-01.jqk5in1.mongodb.net:27017,ac-dpm1db2-shard-00-02.jqk5in1.mongodb.net:27017/?ssl=true&replicaSet=atlas-uiv1ka-shard-0&authSource=admin&retryWrites=true&w=majority`
 
 Connection(URI);
 
